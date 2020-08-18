@@ -17,3 +17,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+  condition: 
+  - task: RunFromFileSystemTask@1
+  inputs:
+    testPathInput: 'C:\Users\demo\Documents\Unified Functional Testing\GUITest1'
